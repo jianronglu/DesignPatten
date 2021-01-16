@@ -10,8 +10,10 @@
 #import "BridgeObj.h"
 #import "AdapterTarget.h"
 #import "CharReverse.h"
-
 #import "ReverseList.h"
+#import "MergeSortedList.h"
+#import "HashFind.h"
+
 @interface ViewController ()
 
 @end
@@ -21,9 +23,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self reverseList];
+    [self findFirstChar];
 }
 
+
+- (void)findFirstChar {
+    char ch[] = "aibagccdeff";
+    char fc = findFirstChar(ch);
+    printf("this char is %c \n", fc);
+    //this char is i 
+}
+
+// 合并有序数组
+- (void)mergetList {
+    int a[5] = {1,4,6,7,9};
+    int b[8] = {2,3,5,6,8,10,11,12};
+    int result[13];
+    
+    mergeList(a, 5, b, 8, result);
+    
+    for (int i = 0; i < 13; i++) {
+        printf("%d ", result[i]);
+    }
+}
 /// 链表反转
 - (void)reverseList {
     struct Node *head = constructList();

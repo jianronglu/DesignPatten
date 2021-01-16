@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9314ED6425B33CDB00EBBE4C /* CharReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9314ED6325B33CDB00EBBE4C /* CharReverse.m */; };
 		9314ED6D25B33ED800EBBE4C /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9314ED6C25B33ED800EBBE4C /* ReverseList.m */; };
+		9314ED7A25B34EB400EBBE4C /* MergeSortedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9314ED7925B34EB400EBBE4C /* MergeSortedList.m */; };
+		9314ED8025B3524E00EBBE4C /* HashFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 9314ED7F25B3524E00EBBE4C /* HashFind.m */; };
 		9379907725B2DE210012C7AF /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379907625B2DE210012C7AF /* Command.m */; };
 		9379907D25B2DE360012C7AF /* CommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379907C25B2DE360012C7AF /* CommandManager.m */; };
 		93A23FBF25B1DAB30041B53F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A23FBE25B1DAB30041B53F /* AppDelegate.m */; };
@@ -51,6 +53,10 @@
 		9314ED6325B33CDB00EBBE4C /* CharReverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharReverse.m; sourceTree = "<group>"; };
 		9314ED6B25B33ED800EBBE4C /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
 		9314ED6C25B33ED800EBBE4C /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
+		9314ED7825B34EB400EBBE4C /* MergeSortedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSortedList.h; sourceTree = "<group>"; };
+		9314ED7925B34EB400EBBE4C /* MergeSortedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSortedList.m; sourceTree = "<group>"; };
+		9314ED7E25B3524E00EBBE4C /* HashFind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashFind.h; sourceTree = "<group>"; };
+		9314ED7F25B3524E00EBBE4C /* HashFind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashFind.m; sourceTree = "<group>"; };
 		9379907525B2DE210012C7AF /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		9379907625B2DE210012C7AF /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		9379907B25B2DE360012C7AF /* CommandManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 		9314ED5C25B33C9700EBBE4C /* 有序数组合并 */ = {
 			isa = PBXGroup;
 			children = (
+				9314ED7825B34EB400EBBE4C /* MergeSortedList.h */,
+				9314ED7925B34EB400EBBE4C /* MergeSortedList.m */,
 			);
 			name = "有序数组合并";
 			path = "算法/有序数组合并";
@@ -125,6 +133,8 @@
 		9314ED5D25B33C9700EBBE4C /* Hash算法 */ = {
 			isa = PBXGroup;
 			children = (
+				9314ED7E25B3524E00EBBE4C /* HashFind.h */,
+				9314ED7F25B3524E00EBBE4C /* HashFind.m */,
 			);
 			name = "Hash算法";
 			path = "算法/Hash算法";
@@ -415,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9314ED8025B3524E00EBBE4C /* HashFind.m in Sources */,
 				93A23FF825B1DB6C0041B53F /* TaskChainObj.m in Sources */,
 				93A23FC525B1DAB30041B53F /* ViewController.m in Sources */,
 				9314ED6425B33CDB00EBBE4C /* CharReverse.m in Sources */,
@@ -424,6 +435,7 @@
 				93A23FBF25B1DAB30041B53F /* AppDelegate.m in Sources */,
 				93A2400B25B2A2F30041B53F /* BaseObjA.m in Sources */,
 				9314ED6D25B33ED800EBBE4C /* ReverseList.m in Sources */,
+				9314ED7A25B34EB400EBBE4C /* MergeSortedList.m in Sources */,
 				93A2402B25B2B2130041B53F /* User.m in Sources */,
 				9379907725B2DE210012C7AF /* Command.m in Sources */,
 				93A2401825B2ACAC0041B53F /* Target.m in Sources */,
