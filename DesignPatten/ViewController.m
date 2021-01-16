@@ -9,7 +9,9 @@
 #import "TaskChainObj.h"
 #import "BridgeObj.h"
 #import "AdapterTarget.h"
+#import "CharReverse.h"
 
+#import "ReverseList.h"
 @interface ViewController ()
 
 @end
@@ -18,9 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self adapter];
     
+//    [self reverseList];
 }
+
+/// 链表反转
+- (void)reverseList {
+    struct Node *head = constructList();
+    struct Node *reverseHead = reverseList(head);
+    printList(reverseHead);
+    printList(head);
+}
+
+/// 字符串反转
+- (void)char_reverse {
+    char ch[] = "hello world";
+    char_reverse(ch);
+    
+    NSLog(@"%s \n", ch);
+    //dlrow olleh
+}
+
 
 - (void)command {
     // 行为参数化
