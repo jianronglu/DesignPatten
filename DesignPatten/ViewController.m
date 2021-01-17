@@ -13,7 +13,8 @@
 #import "ReverseList.h"
 #import "MergeSortedList.h"
 #import "HashFind.h"
-
+#import "CommonSuperFind.h"
+#import "MedianFind.h"
 @interface ViewController ()
 
 @end
@@ -23,9 +24,74 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self findFirstChar];
+    [self findMedian];
 }
 
+- (void)findMedian {
+//    int list[9] = {12,3,10,8,6,7,11,13,9}; ==>9
+    int list[10] = {1,2,3,4,5,6,7,8,9,10};
+    int median = findMedian(list, 10);
+    printf("the median is %d\n", median); //5 实际上(5+6)/2 = 5
+}
+
+/// 查找共同父视图
+- (void)commonSuperFind {
+    self.view.tag = 100;
+    UIView *redView = ({
+       UIView *v = [[UIView alloc] init];
+        v.frame = CGRectMake(100, 100, 100, 200);
+        v.backgroundColor = UIColor.redColor;
+        v.tag = 101;
+        v;
+    });
+    [self.view addSubview:redView];
+    
+    UIView *greedView = ({
+       UIView *v = [[UIView alloc] init];
+        v.frame = CGRectMake(0, 50, 100, 100);
+        v.backgroundColor = UIColor.greenColor;
+        v.tag = 102;
+        v;
+    });
+    [redView addSubview:greedView];
+        
+    UIView *a = ({
+       UIView *v = [[UIView alloc] init];
+        v.frame = CGRectMake(5, 5, 50, 50);
+        v.backgroundColor = UIColor.blueColor;
+        v.tag = 103;
+        v;
+    });
+    [greedView addSubview:a];
+    
+    UIView *b = ({
+       UIView *v = [[UIView alloc] init];
+        v.frame = CGRectMake(60, 5, 50, 50);
+        v.backgroundColor = UIColor.yellowColor;
+        v.tag = 104;
+        v;
+    });
+    [greedView addSubview:b];
+    
+    UIView *c = ({
+        UIView *v = [[UIView alloc] init];
+         v.frame = CGRectMake(0, 5, 20, 20);
+         v.backgroundColor = UIColor.blackColor;
+         v.tag = 105;
+         v;
+     });
+    [b addSubview:c];
+    
+    NSArray *commonArray = [CommonSuperFind findCommonSuperView:a otherView:c];
+    for (UIView *view in commonArray) {
+        NSLog(@"\n=====>%@", @(view.tag));
+    }
+    /*
+     =====>100 self.view
+     =====>101 redView
+     =====>102 greenView
+     */
+}
 
 - (void)findFirstChar {
     char ch[] = "aibagccdeff";

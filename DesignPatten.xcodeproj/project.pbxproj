@@ -13,6 +13,8 @@
 		9314ED8025B3524E00EBBE4C /* HashFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 9314ED7F25B3524E00EBBE4C /* HashFind.m */; };
 		9379907725B2DE210012C7AF /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379907625B2DE210012C7AF /* Command.m */; };
 		9379907D25B2DE360012C7AF /* CommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379907C25B2DE360012C7AF /* CommandManager.m */; };
+		93999F7625B3DAA400E8ED87 /* CommonSuperFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 93999F7525B3DAA400E8ED87 /* CommonSuperFind.m */; };
+		93999F7C25B3E48700E8ED87 /* MedianFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 93999F7B25B3E48700E8ED87 /* MedianFind.m */; };
 		93A23FBF25B1DAB30041B53F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A23FBE25B1DAB30041B53F /* AppDelegate.m */; };
 		93A23FC225B1DAB30041B53F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A23FC125B1DAB30041B53F /* SceneDelegate.m */; };
 		93A23FC525B1DAB30041B53F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A23FC425B1DAB30041B53F /* ViewController.m */; };
@@ -61,6 +63,10 @@
 		9379907625B2DE210012C7AF /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		9379907B25B2DE360012C7AF /* CommandManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
 		9379907C25B2DE360012C7AF /* CommandManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandManager.m; sourceTree = "<group>"; };
+		93999F7425B3DAA400E8ED87 /* CommonSuperFind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonSuperFind.h; sourceTree = "<group>"; };
+		93999F7525B3DAA400E8ED87 /* CommonSuperFind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonSuperFind.m; sourceTree = "<group>"; };
+		93999F7A25B3E48700E8ED87 /* MedianFind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedianFind.h; sourceTree = "<group>"; };
+		93999F7B25B3E48700E8ED87 /* MedianFind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianFind.m; sourceTree = "<group>"; };
 		93A23FBA25B1DAB30041B53F /* DesignPatten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A23FBD25B1DAB30041B53F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93A23FBE25B1DAB30041B53F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 		9314ED5E25B33C9700EBBE4C /* 查找两个子视图的共同父视图 */ = {
 			isa = PBXGroup;
 			children = (
+				93999F7425B3DAA400E8ED87 /* CommonSuperFind.h */,
+				93999F7525B3DAA400E8ED87 /* CommonSuperFind.m */,
 			);
 			name = "查找两个子视图的共同父视图";
 			path = "算法/查找两个子视图的共同父视图";
@@ -171,6 +179,8 @@
 		9314ED6125B33C9700EBBE4C /* 无序数组中位数 */ = {
 			isa = PBXGroup;
 			children = (
+				93999F7A25B3E48700E8ED87 /* MedianFind.h */,
+				93999F7B25B3E48700E8ED87 /* MedianFind.m */,
 			);
 			name = "无序数组中位数";
 			path = "算法/无序数组中位数";
@@ -427,11 +437,13 @@
 			files = (
 				9314ED8025B3524E00EBBE4C /* HashFind.m in Sources */,
 				93A23FF825B1DB6C0041B53F /* TaskChainObj.m in Sources */,
+				93999F7C25B3E48700E8ED87 /* MedianFind.m in Sources */,
 				93A23FC525B1DAB30041B53F /* ViewController.m in Sources */,
 				9314ED6425B33CDB00EBBE4C /* CharReverse.m in Sources */,
 				93A2400225B2A1EF0041B53F /* BridgeObj.m in Sources */,
 				93A2402125B2AE150041B53F /* AdapterTarget.m in Sources */,
 				9379907D25B2DE360012C7AF /* CommandManager.m in Sources */,
+				93999F7625B3DAA400E8ED87 /* CommonSuperFind.m in Sources */,
 				93A23FBF25B1DAB30041B53F /* AppDelegate.m in Sources */,
 				93A2400B25B2A2F30041B53F /* BaseObjA.m in Sources */,
 				9314ED6D25B33ED800EBBE4C /* ReverseList.m in Sources */,

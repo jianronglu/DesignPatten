@@ -22,7 +22,7 @@ char findFirstChar(char *cha) {
     while (*p != '\0') {
         // 在字母对应存储位置 进行出现次数 +1 操作
         printf("*p ==== %d\n", *p);
-        array[*(p++)]++;//对*p的位置进行++， 然后位置下移 *p-->97
+        array[*(p++)]++;//对*p的位置进行++，然后位置下移 *p-->97，(ASCII值作为下标 value++)
     }
     // p 指针重新指向头部
     p = cha;
